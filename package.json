@@ -1,0 +1,19 @@
+{
+  "name": "helpchain",
+  "version": "1.0.0",
+  "description": "Decentralized donation tracking platform",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node blockchain/wallet.js"
+  },
+  "dependencies": {
+    "@stellar/stellar-sdk": "^13.2.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase": "^10.8.0",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^6.10.0"
+  }
+}
