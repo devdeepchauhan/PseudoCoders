@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - HelpChain</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HelpChain - Login</title>
+  <link rel="stylesheet" href="login.css" />
 </head>
 <body>
-  <h2>Login</h2>
+  <div class="main-container">
+    <div class="left">
+      <h1>Welcome to HelpChain</h1>
+      <p class="tagline">
+        Empowering donations with transparency and trust<br />
+        through blockchain technology.
+      </p>
 
-  <form id="loginForm">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required />
-    
-    <button type="submit">Login</button>
-  </form>
+      <div class="features">
+        <div class="feature"><span class="feature-icon">🔐</span>Secure Wallets</div>
+        <div class="feature"><span class="feature-icon">⚡</span>Fast Transactions</div>
+        <div class="feature"><span class="feature-icon">🌍</span>Global Impact</div>
+      </div>
+    </div>
 
-  <p>New here? <a href="index.html">Sign Up</a></p>
+    <div class="right">
+      <div class="container">
+        <h2>Login to HelpChain</h2>
+
+        <form id="loginForm">
+          <input type="email" id="email" placeholder="Enter your email" required />
+          <input type="password" id="password" placeholder="Enter your password" required />
+          <button type="submit">Login</button>
+        </form>
+
+        <p class="nav-text">New here? <a href="index.html">Sign Up</a></p>
+
+        <div id="loginMessage" class="message"></div>
+      </div>
+    </div>
+  </div>
 
   <script src="login.js"></script>
 </body>
